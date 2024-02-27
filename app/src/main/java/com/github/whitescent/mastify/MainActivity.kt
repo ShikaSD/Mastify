@@ -53,7 +53,7 @@ class MainActivity : ComponentActivity() {
         }
         appViewModel.isLoggedIn?.let {
           AppScaffold(
-            startRoute = if (it) NavGraphs.app else NavGraphs.login,
+            startRoute = NavGraphs.login,
             viewModel = appViewModel
           )
         }
